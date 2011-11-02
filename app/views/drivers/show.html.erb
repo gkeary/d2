@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Driverid:</b>
+  <%= @driver.DriverID %>
+</p>
+
+<p>
+  <b>Firstname:</b>
+  <%= @driver.FirstName %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @driver.LastName %>
+</p>
+
+<p>
+  <b>Middleinitial:</b>
+  <%= @driver.MiddleInitial %>
+</p>
+
+
+<%= link_to 'Edit', edit_driver_path(@driver) %> |
+<%= link_to 'Back', drivers_path %>

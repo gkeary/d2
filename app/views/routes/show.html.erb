@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Routeid:</b>
+  <%= @route.RouteID %>
+</p>
+
+<p>
+  <b>Routename:</b>
+  <%= @route.RouteName %>
+</p>
+
+<p>
+  <b>Defaultdriverid:</b>
+  <%= @route.DefaultDriverID %>
+</p>
+
+<p>
+  <b>Drivermessage:</b>
+  <%= @route.DriverMessage %>
+</p>
+
+<p>
+  <b>Duser:</b>
+  <%= @route.DUser %>
+</p>
+
+<p>
+  <b>Terminal:</b>
+  <%= @route.Terminal %>
+</p>
+
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>

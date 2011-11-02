@@ -1,0 +1,29 @@
+<h1>Listing drivers</h1>
+
+<table>
+  <tr>
+    <th>Driverid</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Middleinitial</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @drivers.each do |driver| %>
+  <tr>
+    <td><%= driver.DriverID %></td>
+    <td><%= driver.FirstName %></td>
+    <td><%= driver.LastName %></td>
+    <td><%= driver.MiddleInitial %></td>
+    <td><%= link_to 'Show', driver %></td>
+    <td><%= link_to 'Edit', edit_driver_path(driver) %></td>
+    <td><%= link_to 'Destroy', driver, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Driver', new_driver_path %>

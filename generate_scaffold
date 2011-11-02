@@ -1,0 +1,8 @@
+#rails generate scaffold Person fname:string lname:string
+#rails generate scaffold Person fname:string lname:string
+#rails generate scaffold Person fname:string lname:string
+#rails generate scaffold Person fname:string lname:string
+#http://www.rubyinside.com/how-to-rails-3-and-rspec-2-4336.html
+
+
+rails generate  scaffold Route2 RouteID:string RouteName:string DefaultDriverID:string DriverMessage:string DUser:string Terminal:string 

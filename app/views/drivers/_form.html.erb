@@ -1,0 +1,33 @@
+<%= form_for(@driver) do |f| %>
+  <% if @driver.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@driver.errors.count, "error") %> prohibited this driver from being saved:</h2>
+
+      <ul>
+      <% @driver.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :DriverID %><br />
+    <%= f.text_field :DriverID %>
+  </div>
+  <div class="field">
+    <%= f.label :FirstName %><br />
+    <%= f.text_field :FirstName %>
+  </div>
+  <div class="field">
+    <%= f.label :LastName %><br />
+    <%= f.text_field :LastName %>
+  </div>
+  <div class="field">
+    <%= f.label :MiddleInitial %><br />
+    <%= f.text_field :MiddleInitial %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
