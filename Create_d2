@@ -1,0 +1,1064 @@
+
+ 1742  rails new d2 -T
+
+
+ 1745  cp railsapiexample/Create_blog ./d2
+ 1746  cd d2
+ 1748  mv Create.d2 Create_d2
+' could not find a javascript runtime'
+'  so just add rubpracer to your Gemfile:
+gem 'therubyracer'
+
+see below:
+A tiny note for saving time.
+If you’re trying new rails 3.1.beta under Ubuntu you can see this error:
+
+Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes.
+
+The solution is quite simple. Just add gem ‘therubyracer’ into your Gemfile (it’s for Ruby MRI). Done.
+
+Also, you can install another javascript runtimes. But who cares?
+
+  883  rails c
+  884  rake routes
+  885  vi
+  886  rspec
+  887  rspec --help
+  888  rails --help |less
+  889  gem list rspec
+  890  vi Gemfile
+  891  bundle
+  892  rails generate rspec:install
+  893  cd ..
+  894  history > Create_blog
+##  new creation with the above as a template
+  rails new blog  --skip-test-unit
+  cd blog
+  vi Gemfile #  add development loop with 'gem 'rspec-rails'
+  bundle
+  rails generate rspc:install
+##  then  
+  rails generate scaffold Post name:string title:string content:text
+$ rake db:migrate
+$ rake db:test:prepare
+
+  896  cat Create_blog 
+  897  rails new blog --skip-test-unit
+  898  cd blog
+  899  vi Gemfile 
+  900  cat ../Create_blog 
+  901  rails generate rspec:install
+  902  vi ../Create_blog 
+  903  cat ../Create_blog 
+  904  rails generate scaffold Post name:string title:string content:text
+  905  cat ../Create_blog 
+  906  rake db:migrate
+  907  rake tasks | grep prepare
+  908  rake task
+  909  rake --help
+  910  rake -T
+  911  rake -T prepare
+  912  rake -T db
+  913  cat ../Create_blog 
+  914  rake db:test:prepare
+  915  rail c
+  916  rails c
+  917  rails s
+  918  history
+  919  xxxfoo
+  920  history >>../Create_blog 
+  guard init rspec  #  "... added to Guardfile feel free to ..."
+## add gem 'libnotify'  to Gemfile
+  xxx
+
+  751  gem list |grep 'ffi|notify'
+  752  gem list |grep 'notify'
+  753  sudo apt-get install libnotify-dev
+  754  ruby notify.rb 
+  755  bundle
+  756  ruby notify.rb 
+  757  clear
+  758  ruby --trace notify.rb 
+  759  ruby -h
+  760  ruby -h |less
+  761  irb
+  762  gem list libnotify
+  763  gem uninstall libnotify
+  764  gem install libnotify
+  765  ruby notify.rb 
+  766  irb
+  767  man grep
+  768  gem list
+  769  gem list | grep (ffi|notify)
+  770  gem list | grep '(ffi|notify)'
+  771  gem list | grep '[ffi|notify]'
+  772  gem list | grep '/ffi|notify/'
+  773  gem list |grep ffi
+  774  gem list |grep ffi; gem list notify
+  775  gem list |grep ffi; gem list | grep notify
+  776  gem server
+  777  ruby notify.rb
+  778  vi notify.rb 
+  779  ls
+  780  irb 
+  781  locate libnotify.so
+  782  ls /usr/lib/purple-2/pidgin-libnotify.so 
+  783  ll /usr/lib/purple-2/pidgin-libnotify.so 
+  784  uname -a
+  785  uname -a > setup.txt
+  786  cat setup.txt 
+  787  cat /etc/issue
+  788  cat /etc/issue >> setup.txt
+  789  file /usr/lib/libgtk*
+  790  file /usr/lib/libgtkmn**
+  791  file /usr/lib/libgtkmm*
+  792  ls /usr/lib/libgtkmm*
+  793  ls /usr/lib/libgtk*
+  794  file  /usr/lib/libgtk*
+  795  file  /usr/lib/libgtkm*
+  796  file  /usr/lib/libgtkmm*
+  797  file  /usr/lib/libgtkm*
+  798  sudo apt-get install libgtkmm
+  799  apt-get 
+  800  apt-get check libnotify
+  801  sudo apt-get check libnotify
+  802  sudo apt-get retreive
+  803  sudo apt-get retrieve
+  804  sudo apt-get update
+  805  sudo apt-get update | less
+  806  ls
+  807  cd ../groceries/
+  808  gem server
+  809  notify-send
+  810  notify-send --help
+  811  notify-send 'title of notification' 'body'
+  812  notify-send --h
+  813  notify-send --urgency=critcal 'title of notification' 'body'
+  814  notify-send --urgency=critical 'title of notification' 'body'
+  815  notify-send -t 2 --urgency=critcal 'title of notification' 'body'
+  816  notify-send -t 2 --urgency=critical 'title of notification' 'body'
+  817  notify-send -timeout=2 --urgency=critical 'title of notification' 'body'
+  818  notify-send --timeout=2 --urgency=critical 'title of notification' 'body'
+  819  notify-send --expire-time=2 --urgency=critical 'title of notification' 'body'
+  820  notify-send --expire-time=200 --urgency=critical 'title of notification' 'body'
+  821  notify-send  --urgency=critical 'title of notification' 'body'
+  822  notify-send --expire-time=20000 --urgency=critical 'title of notification' 'body'
+  823  guard
+  824  sudo apt-get install libgtkmm-2.4
+  825  guard
+  826  cd /host
+  827  cd _sandbox/
+  828  ls
+  829  $f=`ls *.tgz`
+  830  ls *.tgz
+  831  ll *.tgz
+  832  pushd ~/work1/
+  833  mkdir ctest_source
+  834  cd ctest_source
+  835  ls /host/_sandbox/rcctr-code.tgz 
+  836  cp /host/_sandbox/rcctr-code.tgz .
+  837  tar xvf rcctr-code.tgz 
+  838  ls
+  839  cd code
+  840  ls
+  841  cd ruby/
+  842  ls
+  843  cd groceries
+  844  ls
+  845  cd spec
+  846  ls
+  847  cd models
+  848  ls
+  849  cat grocery_list_spec.rb 
+  850  which lspci
+  851  man lspci
+  852  lspci
+  853  lspci |less
+  854  lspci |grep Display
+  855  lspci |less
+  856  cd /
+  857  find *.so
+  858  find **/*.so
+  859  $PATH
+  860  ls /usr
+  861  ls /usr/lib
+  862  ls /usr/lib/xorg
+  863  ls /usr/lib/xorg/modules/
+  864  cd 
+  865  cd ~
+  866  cd work1/groceries/
+  867  rake spec
+  868  vi spec/models/grocery_item_spec.rb 
+  869  rake spec
+  870  guard
+  871  cd work1/groceries/
+  872  ls spec
+  873  ls spec/models
+  874  vi spec/models/grocery_list_spec.rb
+  875  rake spec
+  876  guard 
+  877  cd work1/groceries/
+  878  rake routes
+  879  vi
+  880  cd ..
+  881  mkdir RailsAPIExample
+  882  cd RailsAPIExample/
+  883  rails new Posts --skip-unit-test
+  884  rails --help
+  885  rm -rf Posts/
+  886  set -o vi
+  887  rails new Posts --skip-test-unit
+  888  cd Posts/
+  889  rails c
+  890  rake routes
+  891  vi
+  892  rspec
+  893  rspec --help
+  894  rails --help |less
+  895  gem list rspec
+  896  vi Gemfile
+  897  bundle
+  898  rails generate rspec:install
+  899  cd ..
+  900  history > Create_blog
+  901  vi Create_blog
+  902  cat Create_blog 
+  903  rails new blog --skip-test-unit
+  904  cd blog
+  905  vi Gemfile 
+  906  cat ../Create_blog 
+  907  rails generate rspec:install
+  908  vi ../Create_blog 
+  909  cat ../Create_blog 
+  910  rails generate scaffold Post name:string title:string content:text
+  911  cat ../Create_blog 
+  912  rake db:migrate
+  913  rake tasks | grep prepare
+  914  rake task
+  915  rake --help
+  916  rake -T
+  917  rake -T prepare
+  918  rake -T db
+  919  cat ../Create_blog 
+  920  rake db:test:prepare
+  921  rail c
+  922  rails c
+  923  rails s
+  924  history
+  925  xxxfoo
+  926  history >>../Create_blog 
+  927  vi ../Create_blog 
+  928  cd ..
+  929  ls
+  930  rm -rf Posts/
+  931  cd blog
+  932  rake spec
+  933  guard
+  934  guard init
+  935  guard
+  936  guard --help
+  937  ls /work1
+  938  ls ~/work1
+  939  cat ~/work1/groceries/Guardfile 
+  940  cat Guardfile 
+  941  vi Gemfile
+  942  bundle
+  943  cat ../Create_blog 
+  944  guard init rspec
+  945  vi ../Create_blog 
+  946  cat Guardfile 
+  947  guard
+  948  vi Gemfile
+  949  bundle
+  950  guard
+  951  vi ../Create_blog 
+  952  cd work1
+  953  ls
+  954  cd railsapiexample/
+  955  ls
+  956  git init
+  957  git add .
+  958  git commit
+  959  git status
+  960  git help
+  961  git log
+  962  $EDITOR
+  963  $EDITOR=gvim
+  964  alias 
+  965  which vi
+  966  which gvim
+  967  $EDITOR
+  968  $EDITOR=/usr/bin/gvim
+  969  ls /usr/bin
+  970  ls /usr/bin/gvim
+  971  $EDITOR='/usr/bin/gvim'
+  972  git config --global user.name "Gregg Keary
+  973  git config --global user.email "gregg@gkeary.com"
+  974  git remote add origin git@github.com:gkeary/Blog.git
+  975  git help push
+  976  PS1="<"
+  977  git config --global user.name "Gregg Keary"
+  978  git config --global user.email "gregg@gkeary.com"
+  979  git config --global
+  980  git config --global -l
+  981  git status
+  982  git remote add origin git@github.com:gkeary/Blog.git
+  983  git help push
+  984  git push -u origin master
+  985  ssh -T git@github.com
+  986  pwd
+  987  cd ~
+  988  ls .ssh
+  989  cat .ssh/known_hosts 
+  990  ssh -vT git@github.com
+  991  set -o vi
+  992  ssh -vT git@github.com | less
+  993  ls /host
+  994  ls /host/Users/gkeary/.ssh
+  995  cat /host/Users/gkeary/.ssh/id_rsa
+  996  cd .ssh
+  997  ls
+  998  cp /host/Users/gkeary/.ssh/id_rsa .
+  999  ssh -T git@github.com
+ 1000  pwd
+ 1001  ll 
+ 1002  ssh -T git@github.com
+ 1003  man chmod
+ 1004  ssh -T git@github.com
+ 1005  chmod 644 id_rsa ; ll
+ 1006  ssh -T git@github.com
+ 1007  chmod 604 id_rsa ; ll
+ 1008  ssh -T git@github.com
+ 1009  chmod 004 id_rsa ; ll
+ 1010  ssh -T git@github.com
+ 1011  ssh -vT git@github.com | less
+ 1012  ssh -vT git@github.com 
+ 1013  pwd
+ 1014  ll
+ 1015  chmod 007 id_rsa 
+ 1016  ssh -T git@github.com
+ 1017  ssh -vT git@github.com 
+ 1018  history
+ 1019  ls /host/Users/gkeary/.ssh/id_rsa.pub .
+ 1020  cp /host/Users/gkeary/.ssh/id_rsa.pub .
+ 1021  ls
+ 1022  ll
+ 1023  chmod 007 id_rsa.pub 
+ 1024  ll
+ 1025  ssh -T git@github.com
+ 1026  ssh -vT git@github.com
+ 1027  ls
+ 1028  sud ssh -T git@github.com
+ 1029  sudo ssh -T git@github.com
+ 1030  ssh-keygen
+ 1031  ls
+ 1032  rm *
+ 1033  ls
+ 1034  ssh-keygen
+ 1035  ls
+ 1036  vi id_rsa.pub 
+ 1037  ssh -T git@github.com
+ 1038  cd ..
+ 1039  ls
+ 1040  cd work1/
+ 1041  ls
+ 1042  cd railsapiexample/
+ 1043  cd blog
+ 1044  git status
+ 1045  git push origin master
+ 1046  exit
+ 1047  xev
+ 1048  cd work1/
+ 1049  ls
+ 1050  mv RailsAPIExample/ railsapiexample
+ 1051  cd railsapiexample/
+ 1052  ls
+ 1053  cd blog/
+ 1054  ls
+ 1055  ls -a
+ 1056  vi Guardfile 
+ 1057  rails s
+ 1058  guard
+ 1059  git init
+ 1060  rake install
+ 1061  ls
+ 1062  vi
+ 1063  pwd
+ 1064  cd ..
+ 1065  ls
+ 1066  rm scrooloose-nerdtree-30f6bcc/
+ 1067  rm -rf scrooloose-nerdtree-30f6bcc/
+ 1068  cd ..
+ 1069  rm NerdTreeSource/
+ 1070  ls
+ 1071  rm -rf NerdTreeSource/
+ 1072  mv scrooloose-nerdtree-4.1.0-47-g30f6bcc.zip .vim
+ 1073  ls
+ 1074  cd .vim
+ 1075  ls
+ 1076  git init
+ 1077  ls
+ 1078  cd ..
+ 1079  cd .vim
+ 1080  ls
+ 1081  cd scrooloose-nerdtree-30f6bcc/
+ 1082  ls
+ 1083  rake -T
+ 1084  rake install
+ 1085  cd ..
+ 1086  cd scrooloose-nerdtree-30f6bcc/
+ 1087  git init
+ 1088  rake -T
+ 1089  rake pull
+ 1090  rake install
+ 1091  ls
+ 1092  cd doc
+ 1093  ls
+ 1094  rake uninstall
+ 1095  ls
+ 1096  cd ..
+ 1097  ls
+ 1098  ls plugin/
+ 1099  ll scrooloose-nerdtree-30f6bcc/
+ 1100  rm -rf scrooloose-nerdtree-30f6bcc/
+ 1101  cd ~
+ 1102  ls
+ 1103  cd .vim
+ 1104  ls
+ 1105  rm -rf scrooloose-nerdtree-30f6bcc/
+ 1106  ls
+ 1107  cd ..
+ 1108  mv .vim/scrooloose-nerdtree-4.1.0-47-g30f6bcc.zip 
+ 1109  mv .vim/scrooloose-nerdtree-4.1.0-47-g30f6bcc.zip .
+ 1110  ls
+ 1111  ls .vim
+ 1112  pwd
+ 1113  cd .vim
+ 1114  rake install
+ 1115  cd scrooloose-nerdtree-30f6bcc/
+ 1116  rake install
+ 1117  ls
+ 1118  cd ..
+ 1119  pwd
+ 1120  ls
+ 1121  rm -rf scrooloose-nerdtree-30f6bcc/
+ 1122  ls
+ 1123  cd ..
+ 1124  ls
+ 1125  vi
+ 1126  cd work1/
+ 1127  ls
+ 1128  cd railsapiexample/
+ 1129  ls
+ 1130  cd blog
+ 1131  git status
+ 1132  vi
+ 1133  cd work1/railsapiexample/
+ 1134  cd blog/
+ 1135  vi
+ 1136  ping yahoo.com
+ 1137  ping 192.168.1.1
+ 1138  ping yahoo.com
+ 1139  exit
+ 1140  git clone https://github.com/scrooloose/nerdtree.git
+ 1141  cd nerdtree
+ 1142  ls
+ 1143  rake
+ 1144  history >nerdtree_install.info
+ 1145  ls
+ 1146  cat nerdtree_install.info 
+ 1147  vi nerdtree_install.info 
+ 1148  cd ~/work1/railsapiexample/blog/
+ 1149  vi
+ 1150  guard
+ 1151  ls
+ 1152  gem install spork
+ 1153  gem list spork
+ 1154  time rspec spec/
+ 1155  clear
+ 1156  exit
+ 1157  ls .gemrc
+ 1158  touch .gemrc
+ 1159  vi .gemrc
+ 1160  ls
+ 1161  ls .gem
+ 1162  ls
+ 1163  cat .gem/ruby/
+ 1164  ls .gem/ruby/
+ 1165  ls
+ 1166  ls .gem/ruby/1.9.1
+ 1167  ls .gem/ruby/1.9.1/cache/
+ 1168  rails -v
+ 1169  mkdir rails-projects
+ 1170  cd rails-projects/
+ 1171  cd ..
+ 1172  rm -rf rails-projects/
+ 1173  mkdir rails_projects
+ 1174  cd rails_projects/
+ 1175  rails new first_app
+ 1176  cd first_app/
+ 1177  vi 
+ 1178  vi
+ 1179  bundle install
+ 1180  rails server
+ 1181  rm -rf rails-projects/clear
+ 1182  clearf
+ 1183  clear
+ 1184  rails server
+ 1185  exit
+ 1186  cd work1/railsapiexample/blog/
+ 1187  ls -a
+ 1188  cat .rspec 
+ 1189  gem list rails
+ 1190  gem list rspec-rails
+ 1191  gem list rspec
+ 1192  gem list spork
+ 1193  gem list guard guard-spork
+ 1194  gem list guard-spork
+ 1195  vi Gemfile
+ 1196  bundle install
+ 1197  bundle exec spork --bootstrap
+ 1198  clear
+ 1199  set -o vi
+ 1200  clear
+ 1201  time rspec /spec
+ 1202  ls 
+ 1203  clear
+ 1204  time rspec spec/
+ 1205  time rspec --drb spec/
+ 1206  time rspec spec/
+ 1207  guard
+ 1208  exit
+ 1209  cd work1/railsapiexample/blog/
+ 1210  bundle exex spork
+ 1211  bundle exec spork
+ 1212  history
+ 1213  bundle exec spork
+ 1214  clear
+ 1215  set -o vi
+ 1216  bundle exec spork
+ 1217  gps
+ 1218  ps
+ 1219  ps -a
+ 1220  sudo ps
+ 1221  exit
+ 1222  cd rails_projects/
+ 1223  ls
+ 1224  cd first_app/
+ 1225  ls
+ 1226  rails server
+ 1227  cd ~
+ 1228  cd work1/railsapiexample/
+ 1229  ls
+ 1230  cd blog/
+ 1231  ls
+ 1232  rails server
+ 1233  ls
+ 1234  ls script/
+ 1235  ls
+ 1236  jobs
+ 1237  rails
+ 1238  which rails
+ 1239  rvm
+ 1240  ls
+ 1241  rake
+ 1242  cd ~
+ 1243  ls
+ 1244  ls -a
+ 1245  ls .sudo_as_admin_successful 
+ 1246  cat .sudo_as_admin_successful 
+ 1247  which ruby
+ 1248  rvm
+ 1249  rvm | less
+ 1250  cat .bashrc
+ 1251  cat .rvm/scripts/rvm
+ 1252  ls
+ 1253  cd work1/railsapiexample/blog/
+ 1254  ls
+ 1255  rspec spec
+ 1256  rake tasks
+ 1257  gem list rake
+ 1258  gem uninstall rake
+ 1259  vi -d Gemfile /home/gkeary/rails_projects/first_app/Gemfile
+ 1260  rails c
+ 1261  rails c --trace
+ 1262  cd ..
+ 1263  cd ~
+ 1264  cd rails_projects/
+ 1265  rails new x --skip-unit-tests
+ 1266  cd x
+ 1267  ls
+ 1268  rails server
+ 1269  TCPServer Error: Address already in use
+ 1270  lsof|grep 3000
+ 1271  lsof
+ 1272  man lsof
+ 1273  lsof | grep 3000 | more
+ 1274  set -o vi
+ 1275  lsof | grep 3000 | less
+ 1276  lsof -iTCP:3000
+ 1277  kill -9 11879
+ 1278  cd ..
+ 1279  rm -rf x
+ 1280  ls
+ 1281  cd first_app/
+ 1282  rails server
+ 1283  git config --global alias co=checkout
+ 1284  git config --global alias.co=checkout
+ 1285  git config --global alias.co checkout
+ 1286  git config --global list
+ 1287  git help config
+ 1288  git config --global -l
+ 1289  git config --global core.editor "gvim -f"
+ 1290  git init
+ 1291  cat .gitignore
+ 1292  vi .gitignore
+ 1293  git add .
+ 1294  git commit 
+ 1295  git log
+ 1296  ls app/controllers/
+ 1297  rm -rf app/controllers/
+ 1298  git status
+ 1299  git co -f
+ 1300  git status
+ 1301  ls app/controllers/
+ 1302  git remote add origin git@github.com:gkeary/first_app.git
+ 1303  git push origin master
+ 1304  git co -b modify-README
+ 1305  git branch
+ 1306  git mv README README.markdownE
+ 1307  git mv README.markdownE README.markdownE
+ 1308  git mv README.markdownE README.markdown
+ 1309  vi README.markdown 
+ 1310  git status
+ 1311  git commit -a-m'Improved the README file"
+ 1312  git commit -a-m'Improved the README file'
+ 1313  git commit -a -m 'Improved the README file'
+ 1314  git co master
+ 1315  git merge modify-README
+ 1316  gitk
+ 1317  git branch -d modify-README 
+ 1318  git push
+ 1319  gem install heroku
+ 1320  heroku keys:add
+ 1321  heroku create
+ 1322  ps1="> "
+ 1323  $PS1
+ 1324  $PS1="> "
+ 1325  git push heroku master
+ 1326  heroku open
+ 1327  cd ..
+ 1328  rails new demo_app
+ 1329  cd demo_app
+ 1330  vi Gemfile 
+ 1331  bundle
+ 1332  git init
+ 1333  git add .
+ 1334  git co -m 'Initial commit'
+ 1335  git commit -m 'Initial commit"
+ 1336  git commit -m 'Initial commit'
+ 1337  git remote add origin git@github.com:gkeary/demo_app.git
+ 1338  git push -u origin master
+ 1339  rails generate scaffold User name:string email:string
+ 1340  rake db:migrate
+ 1341  rails s
+ 1342  rake routes
+ 1343  rails generate scaffold Micropost content:string user_id:integer
+ 1344  rake db:migrate
+ 1345  rails server
+ 1346  rails c
+ 1347  git add .
+ 1348  git commit -a -m 'Done with the demo app'
+ 1349  git push
+ 1350  heroku create
+ 1351  git push heroku master
+ 1352  heroku --help
+ 1353  heroku rake db:migrate
+ 1354  gem install taps
+ 1355  heroku db:push
+ 1356  vf ..
+ 1357  cd ..
+ 1358  rails new sample_app -T
+ 1359  cd sample_app/
+ 1360  vi Gemfile 
+ 1361  bundle
+ 1362  rails generate rspec:install
+ 1363  git init
+ 1364  git add .
+ 1365  git commit -m 'Initial commit'
+ 1366  vi README
+ 1367  git mv README README.markdown
+ 1368  git remote add origin git@github.com:gkeary/sample_app.git
+ 1369  git push origin master
+ 1370  heroku create
+ 1371  git push heroku master
+ 1372  ls
+ 1373  cat README.markdownE
+ 1374  cat README.markdown
+ 1375  rm README
+ 1376  git rm README
+ 1377  ls
+ 1378  git status
+ 1379  git add .
+ 1380  git commit -a -m 'modified README'
+ 1381  git push origin master
+ 1382  git push heroku
+ 1383  rails s
+ 1384  rake rspec
+ 1385  rake spec
+ 1386  rake tasks
+ 1387  rake routes
+ 1388  gem install autotest -v 4.4.6
+ 1389  gem install autotest-rails-pure -v 4.1.2
+ 1390  ls ~/work1/railsapiexample/blog/Gemfile
+ 1391  vi -d Gemfile /home/gkeary/work1/railsapiexample/blog/Gemfile
+ 1392  history
+ 1393  curl --head www.yahoo.com
+ 1394  curl --head www.google.com
+ 1395  rspec spec/
+ 1396  git co -b rspec-not-running
+ 1397  cat "You cannot specify the same gem twice with different version requirements. You specified: rspec-rails (= 2.6.1) and rspec-rails (>= 0)" > error.txt
+ 1398  cat error.txt
+ 1399  echo "You cannot specify the same gem twice with different version requirements. You specified: rspec-rails (= 2.6.1) and rspec-rails (>= 0)" > error.txt
+ 1400  cat error.txt 
+ 1401  vi Gemfile
+ 1402  rspec spec/
+ 1403  vi Gemfile
+ 1404  gem server
+ 1405  rspec spec/
+ 1406  bundle exec rspec spec/
+ 1407  rake spec
+ 1408  vi error.txt
+ 1409  history
+ 1410  bundle
+ 1411  rspec spec/
+ 1412  bundle exec rspec spec/
+ 1413  vi error.txt 
+ 1414  git status
+ 1415  git add .
+ 1416  git commit
+ 1417  git branch
+ 1418  git branch using-guard
+ 1419  git checkout using-guard
+ 1420  git merge rspec-not-running
+ 1421  git status
+ 1422  git push origin using-guard
+ 1423  guard
+ 1424  guard --help
+ 1425  guard list
+ 1426  guard init
+ 1427  guard list
+ 1428  guard help init
+ 1429  guard init rspec
+ 1430  cat Guardfile 
+ 1431  guard
+ 1432  spork
+ 1433  rails s
+ 1434  git status
+ 1435  git add .
+ 1436  git rm app/views/layouts/application.html.erb
+ 1437  git status
+ 1438  git commit
+ 1439  git branch
+ 1440  git push origin static-pages
+ 1441  spork
+ 1442  ps
+ 1443  ps -a
+ 1444  sudo ps
+ 1445  exit
+ 1446  cd rails_projects/
+ 1447  cd sample_app/
+ 1448  touch public/hello.html
+ 1449  vi public/hello.html 
+ 1450  rails s
+ 1451  git co -b static-pages
+ 1452  rails g controller Pages home contact
+ 1453  vi app/controllers/pages_controller.rb 
+ 1454  git add .
+ 1455  git commit -a -m 'Added a Pages controller'
+ 1456  git push
+ 1457  git branch
+ 1458  git push origin static-pages
+ 1459  git status
+ 1460  history
+ 1461  git co -b using-guard
+ 1462  git add .
+ 1463  git commit -a -m 'using guard and spork'
+ 1464  git branch
+ 1465  git push origin using-guard
+ 1466  git status
+ 1467  gitk
+ 1468  git status
+ 1469  git add .
+ 1470  git commit
+ 1471  git status
+ 1472  git co master
+ 1473  git branch
+ 1474  git co static-pages
+ 1475  git merge using-guard
+ 1476  git status
+ 1477  git push origin static-pages
+ 1478  guard
+ 1479  bundle exe rspec /spec
+ 1480  bundle exe rspec spec/
+ 1481  cat Guardfile 
+ 1482  time bundle exec rspec spec/
+ 1483  spork --help
+ 1484  spork --bootstrap
+ 1485  spork
+ 1486  time bundle exe rspec spec/
+ 1487  set -o vi
+ 1488  time bundle exe rspec spec/
+ 1489  git status
+ 1490  git log
+ 1491  guard
+ 1492  history
+ 1493  git status
+ 1494  git add .
+ 1495  git commit
+ 1496  clear
+ 1497  git branch
+ 1498  git push origin static-pages
+ 1499  bundle
+ 1500  guard
+ 1501  time bundle exec rspec spec/
+ 1502  guard
+ 1503  time rspec spec/
+ 1504  time rspec --drb spec/
+ 1505  git status
+ 1506  git add .
+ 1507  git commit 
+ 1508  git log
+ 1509  git branch
+ 1510  git push origin static-pages
+ 1511  git rm -r spec/views
+ 1512  git rm -r spec/helpers
+ 1513  git status
+ 1514  git commit 
+ 1515  rspec spec/
+ 1516  guard
+ 1517  rspec spec/
+ 1518  clear
+ 1519  rspec spec/
+ 1520  guard
+ 1521  touch app/views/pages/about.html.erb
+ 1522  vi 
+ 1523  guard
+ 1524  rspec spec/
+ 1525  guard
+ 1526  clear
+ 1527  rspec spec/
+ 1528  bundle exec rspec spec/
+ 1529  guard
+ 1530  git status
+ 1531  git add .
+ 1532  git commit 
+ 1533  git branch
+ 1534  git push origin static-pages
+ 1535  rails s
+ 1536  git status
+ 1537  guard
+ 1538  ls app/views/layouts/
+ 1539  rspec spec/
+ 1540  guard
+ 1541  git add .
+ 1542  git commit
+ 1543  git branch
+ 1544  git push origin static-pages
+ 1545  vi app/views/layout/application.html.erb
+ 1546  ls app/views
+ 1547  ls app/views/pages
+ 1548  mkdir app/views/layout
+ 1549  touch app/views/layout/application.html.erb
+ 1550  vi  app/views/layout/application.html.erb
+ 1551  rspec spec/
+ 1552  bundle exe rspe spec/
+ 1553  bundle exe rspec spec/
+ 1554  rails s
+ 1555  guard
+ 1556  ls /app/views
+ 1557  ls app/views
+ 1558  mv app/views/layout app/views/layouts
+ 1559  vi
+ 1560  guard
+ 1561  rails c
+ 1562  rails s
+ 1563  guard
+ 1564  bundle exec rspec spec/
+ 1565  guard
+ 1566  git status
+ 1567  git add .
+ 1568  git commit
+ 1569  git co master
+ 1570  git merge static-pages
+ 1571  git push origin master
+ 1572  gitk
+ 1573  bundel exe rspec spec/
+ 1574  bundle exe rspec spec/
+ 1575  git push
+ 1576  bundle exec rspec/spec
+ 1577  bundle exec rspec spec/
+ 1578  git push heroku
+ 1579  git branch -b adding-help-page
+ 1580  history | less
+ 1581  git co -b add-help-page
+ 1582  vi
+ 1583  bundle exec rspec spec/
+ 1584  ls ~/work1/
+ 1585  ls ~/work1/railsapiexample/blog/spec/
+ 1586  ls ~/work1/railsapiexample/blog/spec/models/
+ 1587  ls ~/work1/railsapiexample/blog/spec/models/post_spec.rb 
+ 1588  grep :each  ~/work1/railsapiexample/blog/spec/models/post_spec.rb 
+ 1589  grep :each  ~/work1/railsapiexample/blog/spec/models/post_spec.rb 
+ 1590  vi   ~/work1/railsapiexample/blog/spec/models/post_spec.rb 
+ 1591  vi
+ 1592  bundle exec rspec spec/
+ 1593  rspec spec/
+ 1594  bundle exec rspec spec/
+ 1595  git add .
+ 1596  git commit
+ 1597  git branch
+ 1598  bundle exec rspec spec/
+ 1599  clear
+ 1600  bundle exec rspec spec/
+ 1601  clear
+ 1602  bundle exec rspec spec/
+ 1603  rails s
+ 1604  git co app/views/pages/contact.html.erb
+ 1605  rails s
+ 1606  git add .
+ 1607  git commit 
+ 1608  touch app/helpers/application_helper.rb
+ 1609  vi
+ 1610  bundle exex rspec spec/
+ 1611  bundle exec rspec spec/
+ 1612  rails s
+ 1613  bundle exec rspec spec/
+ 1614  git status
+ 1615  git log
+ 1616  git add .
+ 1617  git commit
+ 1618  git branch
+ 1619  git push origin add-help-page
+ 1620  git co master
+ 1621  git merge add-help-page
+ 1622  git status
+ 1623  git push heroku
+ 1624  cd work1/
+ 1625  ls
+ 1626  cd railsapiexample/
+ 1627  ls
+ 1628  cd blog
+ 1629  ls
+ 1630  cat README 
+ 1631  ls
+ 1632  vi
+ 1633  ls
+ 1634  cd ../../
+ 1635  rails new dispatch --skip-unit-tests
+ 1636  cd dispatch/
+ 1637  cp ../railsapiexample/blog/Gemfile .
+ 1638  bundle install
+ 1639  rake tasks
+ 1640  ls
+ 1641  cd ..
+ 1642  ls
+ 1643  rm -rf dispatch/
+ 1644  rails help new
+ 1645  ls
+ 1646  rails new dispatch --skip-test-unit
+ 1647  cd dispatch
+ 1648  cd work1/
+ 1649  ls
+ 1650  cd dispatch/
+ 1651  ls
+ 1652  vi Gemfile Guardfile 
+ 1653  ls
+ 1654  cd rails_projects/
+ 1655  ls
+ 1656  cd ../work1/
+ 1657  ls
+ 1658  cd dispatch/
+ 1659  git status
+ 1660  ls
+ 1661  rspec
+ 1662  git help clone
+ 1663  cls
+ 1664  git clone --help
+ 1665  git clone --help 
+ 1666  cd ..
+ 1667  git clone
+ 1668  git clone -- http://github.com:gkeary/d2.git d2
+ 1669  git help update-server-info
+ 1670  clear
+ 1671  git clone -- git@github.com:gkeary/d2.git d2
+ 1672  git clone -- git@github.com:gkeary/D2.git d2
+ 1673  cd d2
+ 1674  ls
+ 1675  bundle
+ 1676  rspec
+ 1677  vi -d Gemfile ../dispatch/Gemfile
+ 1678  gem list spork
+ 1679  rails s
+ 1680  gem server
+ 1681  guard
+ 1682  spork
+ 1683  cd ..
+ 1684  ls
+ 1685  cd groceries/
+ 1686  ls
+ 1687  vi Gemfile
+ 1688  rspec
+ 1689  bundle
+ 1690  rspec
+ 1691  ls
+ 1692  cd Public/
+ 1693  ls
+ 1694  pwd
+ 1695  cd ../work1/
+ 1696  ls
+ 1697  cd x
+ 1698  ls
+ 1699  rspec
+ 1700  ls db
+ 1701  rake
+ 1702  bundle exec rake
+ 1703  pwd
+ 1704  cd ..
+ 1705  ls
+ 1706  cd railsapiexample/
+ 1707  LS
+ 1708  ls
+ 1709  cd blog
+ 1710  ls
+ 1711  rspec
+ 1712  bundle exec rspec
+ 1713  cd ../../
+ 1714  rm -rf d2
+ 1715  git clone -- github.com:gkeary/D2.git d2
+ 1716  history
+ 1717  git clone |less
+ 1718  exit
+ 1719  gem list execjs
+ 1720  pwd
+ 1721  cd work1/d2
+ 1722  grep execjs Gemfile
+ 1723  vi Gemfile
+ 1724  cd ..
+ 1725  ls
+ 1726  vi railsapiexample/blog/Gemfile
+ 1727  cd railsapiexample/blog
+ 1728  rspec
+ 1729  bundle exed rspec
+ 1730  bundle exec rspec
+ 1731  ls
+ 1732  cd ..
+ 1733  cd blogs
+ 1734  ls
+ 1735  cat Create_blog 
+ 1736  guard
+ 1737  cd blog
+ 1738  guard
+ 1739  cd ../../
+ 1740  ls
+ 1741  rm -rf d2
