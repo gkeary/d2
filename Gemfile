@@ -32,9 +32,10 @@ gem 'therubyracer'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+gem 'spork'
  group :development, :test do
    gem 'rspec-rails'
-   gem 'guard'
-   gem 'guard-rspec'
-   gem 'spork'
+#   gem 'guard'
+#   gem 'guard-rspec'
+   gem 'watchr'
  end

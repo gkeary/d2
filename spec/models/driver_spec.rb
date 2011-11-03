@@ -8,6 +8,7 @@ describe Driver do
    
   it "can be saved successfully" do
     Driver.create.should be_persisted
+
   end
 
 end
