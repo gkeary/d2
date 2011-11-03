@@ -1,0 +1,2 @@
+module CurrendDayRoutesHelper
+end

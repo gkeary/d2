@@ -1,4 +1,8 @@
 D2::Application.routes.draw do  
+  resources :current_day_pickups
+
+  resources :currend_day_routes
+
   resources :archives
 
   resources :pickups

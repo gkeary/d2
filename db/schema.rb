@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111103023623) do
+ActiveRecord::Schema.define(:version => 20111103030630) do
 
   create_table "archives", :force => true do |t|
     t.integer  "PickupArchiveID"
@@ -27,6 +27,45 @@ ActiveRecord::Schema.define(:version => 20111103023623) do
     t.datetime "PADispatchTime"
     t.boolean  "PADeleted"
     t.string   "PANotes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "currend_day_routes", :force => true do |t|
+    t.integer  "CurrentDayRouteID"
+    t.string   "CDRRouteID"
+    t.string   "CDRRouteName"
+    t.string   "CDRDefaultDriverID"
+    t.string   "CDRDriverLastName"
+    t.string   "CDRDriverMessage"
+    t.string   "CDRStation"
+    t.boolean  "CDRChecked"
+    t.datetime "CDRDate"
+    t.string   "DUser"
+    t.string   "Terminal"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "current_day_pickups", :force => true do |t|
+    t.integer  "CurrentDayPickupID"
+    t.string   "CDPDefaultRouteID"
+    t.string   "CDPPreviousRouteID"
+    t.datetime "CDPPickupDate"
+    t.string   "CDPCustomerID"
+    t.string   "CDPDriverName"
+    t.string   "CDPDriverMessage"
+    t.string   "CDPRouteName"
+    t.string   "CDPCustomerName"
+    t.string   "CDPComment"
+    t.boolean  "CDPDispatched"
+    t.datetime "CDPDispatchTime"
+    t.string   "CDPNotes"
+    t.string   "CDPStation"
+    t.boolean  "CDPChecked"
+    t.boolean  "CDPDeleted"
+    t.integer  "PostedCount"
+    t.string   "Terminal"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,57 @@
+<h1>Listing current_day_pickups</h1>
+
+<table>
+  <tr>
+    <th>Currentdaypickupid</th>
+    <th>Cdpdefaultrouteid</th>
+    <th>Cdppreviousrouteid</th>
+    <th>Cdppickupdate</th>
+    <th>Cdpcustomerid</th>
+    <th>Cdpdrivername</th>
+    <th>Cdpdrivermessage</th>
+    <th>Cdproutename</th>
+    <th>Cdpcustomername</th>
+    <th>Cdpcomment</th>
+    <th>Cdpdispatched</th>
+    <th>Cdpdispatchtime</th>
+    <th>Cdpnotes</th>
+    <th>Cdpstation</th>
+    <th>Cdpchecked</th>
+    <th>Cdpdeleted</th>
+    <th>Postedcount</th>
+    <th>Terminal</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @current_day_pickups.each do |current_day_pickup| %>
+  <tr>
+    <td><%= current_day_pickup.CurrentDayPickupID %></td>
+    <td><%= current_day_pickup.CDPDefaultRouteID %></td>
+    <td><%= current_day_pickup.CDPPreviousRouteID %></td>
+    <td><%= current_day_pickup.CDPPickupDate %></td>
+    <td><%= current_day_pickup.CDPCustomerID %></td>
+    <td><%= current_day_pickup.CDPDriverName %></td>
+    <td><%= current_day_pickup.CDPDriverMessage %></td>
+    <td><%= current_day_pickup.CDPRouteName %></td>
+    <td><%= current_day_pickup.CDPCustomerName %></td>
+    <td><%= current_day_pickup.CDPComment %></td>
+    <td><%= current_day_pickup.CDPDispatched %></td>
+    <td><%= current_day_pickup.CDPDispatchTime %></td>
+    <td><%= current_day_pickup.CDPNotes %></td>
+    <td><%= current_day_pickup.CDPStation %></td>
+    <td><%= current_day_pickup.CDPChecked %></td>
+    <td><%= current_day_pickup.CDPDeleted %></td>
+    <td><%= current_day_pickup.PostedCount %></td>
+    <td><%= current_day_pickup.Terminal %></td>
+    <td><%= link_to 'Show', current_day_pickup %></td>
+    <td><%= link_to 'Edit', edit_current_day_pickup_path(current_day_pickup) %></td>
+    <td><%= link_to 'Destroy', current_day_pickup, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Current day pickup', new_current_day_pickup_path %>

@@ -1,0 +1,95 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Currentdaypickupid:</b>
+  <%= @current_day_pickup.CurrentDayPickupID %>
+</p>
+
+<p>
+  <b>Cdpdefaultrouteid:</b>
+  <%= @current_day_pickup.CDPDefaultRouteID %>
+</p>
+
+<p>
+  <b>Cdppreviousrouteid:</b>
+  <%= @current_day_pickup.CDPPreviousRouteID %>
+</p>
+
+<p>
+  <b>Cdppickupdate:</b>
+  <%= @current_day_pickup.CDPPickupDate %>
+</p>
+
+<p>
+  <b>Cdpcustomerid:</b>
+  <%= @current_day_pickup.CDPCustomerID %>
+</p>
+
+<p>
+  <b>Cdpdrivername:</b>
+  <%= @current_day_pickup.CDPDriverName %>
+</p>
+
+<p>
+  <b>Cdpdrivermessage:</b>
+  <%= @current_day_pickup.CDPDriverMessage %>
+</p>
+
+<p>
+  <b>Cdproutename:</b>
+  <%= @current_day_pickup.CDPRouteName %>
+</p>
+
+<p>
+  <b>Cdpcustomername:</b>
+  <%= @current_day_pickup.CDPCustomerName %>
+</p>
+
+<p>
+  <b>Cdpcomment:</b>
+  <%= @current_day_pickup.CDPComment %>
+</p>
+
+<p>
+  <b>Cdpdispatched:</b>
+  <%= @current_day_pickup.CDPDispatched %>
+</p>
+
+<p>
+  <b>Cdpdispatchtime:</b>
+  <%= @current_day_pickup.CDPDispatchTime %>
+</p>
+
+<p>
+  <b>Cdpnotes:</b>
+  <%= @current_day_pickup.CDPNotes %>
+</p>
+
+<p>
+  <b>Cdpstation:</b>
+  <%= @current_day_pickup.CDPStation %>
+</p>
+
+<p>
+  <b>Cdpchecked:</b>
+  <%= @current_day_pickup.CDPChecked %>
+</p>
+
+<p>
+  <b>Cdpdeleted:</b>
+  <%= @current_day_pickup.CDPDeleted %>
+</p>
+
+<p>
+  <b>Postedcount:</b>
+  <%= @current_day_pickup.PostedCount %>
+</p>
+
+<p>
+  <b>Terminal:</b>
+  <%= @current_day_pickup.Terminal %>
+</p>
+
+
+<%= link_to 'Edit', edit_current_day_pickup_path(@current_day_pickup) %> |
+<%= link_to 'Back', current_day_pickups_path %>

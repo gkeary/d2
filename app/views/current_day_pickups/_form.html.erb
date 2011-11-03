@@ -1,0 +1,89 @@
+<%= form_for(@current_day_pickup) do |f| %>
+  <% if @current_day_pickup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@current_day_pickup.errors.count, "error") %> prohibited this current_day_pickup from being saved:</h2>
+
+      <ul>
+      <% @current_day_pickup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CurrentDayPickupID %><br />
+    <%= f.number_field :CurrentDayPickupID %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPDefaultRouteID %><br />
+    <%= f.text_field :CDPDefaultRouteID %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPPreviousRouteID %><br />
+    <%= f.text_field :CDPPreviousRouteID %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPPickupDate %><br />
+    <%= f.datetime_select :CDPPickupDate %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPCustomerID %><br />
+    <%= f.text_field :CDPCustomerID %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPDriverName %><br />
+    <%= f.text_field :CDPDriverName %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPDriverMessage %><br />
+    <%= f.text_field :CDPDriverMessage %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPRouteName %><br />
+    <%= f.text_field :CDPRouteName %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPCustomerName %><br />
+    <%= f.text_field :CDPCustomerName %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPComment %><br />
+    <%= f.text_field :CDPComment %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPDispatched %><br />
+    <%= f.check_box :CDPDispatched %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPDispatchTime %><br />
+    <%= f.datetime_select :CDPDispatchTime %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPNotes %><br />
+    <%= f.text_field :CDPNotes %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPStation %><br />
+    <%= f.text_field :CDPStation %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPChecked %><br />
+    <%= f.check_box :CDPChecked %>
+  </div>
+  <div class="field">
+    <%= f.label :CDPDeleted %><br />
+    <%= f.check_box :CDPDeleted %>
+  </div>
+  <div class="field">
+    <%= f.label :PostedCount %><br />
+    <%= f.number_field :PostedCount %>
+  </div>
+  <div class="field">
+    <%= f.label :Terminal %><br />
+    <%= f.text_field :Terminal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

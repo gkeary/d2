@@ -1,0 +1,61 @@
+<%= form_for(@currend_day_route) do |f| %>
+  <% if @currend_day_route.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@currend_day_route.errors.count, "error") %> prohibited this currend_day_route from being saved:</h2>
+
+      <ul>
+      <% @currend_day_route.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CurrentDayRouteID %><br />
+    <%= f.number_field :CurrentDayRouteID %>
+  </div>
+  <div class="field">
+    <%= f.label :CDRRouteID %><br />
+    <%= f.text_field :CDRRouteID %>
+  </div>
+  <div class="field">
+    <%= f.label :CDRRouteName %><br />
+    <%= f.text_field :CDRRouteName %>
+  </div>
+  <div class="field">
+    <%= f.label :CDRDefaultDriverID %><br />
+    <%= f.text_field :CDRDefaultDriverID %>
+  </div>
+  <div class="field">
+    <%= f.label :CDRDriverLastName %><br />
+    <%= f.text_field :CDRDriverLastName %>
+  </div>
+  <div class="field">
+    <%= f.label :CDRDriverMessage %><br />
+    <%= f.text_field :CDRDriverMessage %>
+  </div>
+  <div class="field">
+    <%= f.label :CDRStation %><br />
+    <%= f.text_field :CDRStation %>
+  </div>
+  <div class="field">
+    <%= f.label :CDRChecked %><br />
+    <%= f.check_box :CDRChecked %>
+  </div>
+  <div class="field">
+    <%= f.label :CDRDate %><br />
+    <%= f.datetime_select :CDRDate %>
+  </div>
+  <div class="field">
+    <%= f.label :DUser %><br />
+    <%= f.text_field :DUser %>
+  </div>
+  <div class="field">
+    <%= f.label :Terminal %><br />
+    <%= f.text_field :Terminal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
