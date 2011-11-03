@@ -51,7 +51,7 @@ describe "pickups/index.html.erb" do
 #    assert_select "tr>td", :text => false.to_s, :count => 2
 #    assert_select "tr>td", :text => false.to_s, :count => 2
 #    assert_select "tr>td", :text => false.to_s, :count => 2
-#    assert_select "tr>td", :text => false.to_s, :count => 2
+#    assert_select "tr>td", :text => false.to_s, :count => 4
 #    assert_select "tr>td", :text => false.to_s, :count => 2
 #    assert_select "tr>td", :text => false.to_s, :count => 2
 #    assert_select "tr>td", :text => "Notes".to_s, :count => 2

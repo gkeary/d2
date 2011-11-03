@@ -11,7 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111103021846) do
+ActiveRecord::Schema.define(:version => 20111103023623) do
+
+  create_table "archives", :force => true do |t|
+    t.integer  "PickupArchiveID"
+    t.string   "PADefaultRouteID"
+    t.datetime "PAPickupDate"
+    t.string   "PACustomerID"
+    t.string   "PADriverName"
+    t.string   "PADriverMessage"
+    t.string   "PARouteName"
+    t.string   "PACustomerName"
+    t.string   "PAComment"
+    t.boolean  "PADispatched"
+    t.datetime "PADispatchTime"
+    t.boolean  "PADeleted"
+    t.string   "PANotes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "customers", :force => true do |t|
     t.integer  "CustomerTableID"

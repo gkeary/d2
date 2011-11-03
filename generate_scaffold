@@ -17,3 +17,8 @@ rails g scaffold Pickup PickupTableID:integer DefaultRouteID:string PickupDate:d
 
 rails g scaffold Archive PickupArchiveID:integer PADefaultRouteID:string PAPickupDate:datetime PACustomerID:string PADriverName:string PADriverMessage:string PARouteName:string PACustomerName:string PAComment:string PADispatched:boolean PADispatchTime:datetime PADeleted:boolean PANotes:string 
 
+rails g scaffold CurrendDayRoute CurrentDayRouteID:integer CDRRouteID:string CDRRouteName:string CDRDefaultDriverID:string CDRDriverLastName:string CDRDriverMessage:string CDRStation:string CDRChecked:boolean CDRDate:datetime DUser:string Terminal:string 
+
+rails g scaffold CurrentDayPickup CurrentDayPickupID:integer CDPDefaultRouteID:string CDPPreviousRouteID:string CDPPickupDate:datetime CDPCustomerID:string CDPDriverName:string CDPDriverMessage:string CDPRouteName:string CDPCustomerName:string CDPComment:string CDPDispatched:boolean CDPDispatchTime:datetime CDPNotes:string CDPStation:string CDPChecked:boolean CDPDeleted:boolean PostedCount:integer Terminal:string 
+
+

@@ -1,0 +1,69 @@
+<%= form_for(@archive) do |f| %>
+  <% if @archive.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@archive.errors.count, "error") %> prohibited this archive from being saved:</h2>
+
+      <ul>
+      <% @archive.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PickupArchiveID %><br />
+    <%= f.number_field :PickupArchiveID %>
+  </div>
+  <div class="field">
+    <%= f.label :PADefaultRouteID %><br />
+    <%= f.text_field :PADefaultRouteID %>
+  </div>
+  <div class="field">
+    <%= f.label :PAPickupDate %><br />
+    <%= f.datetime_select :PAPickupDate %>
+  </div>
+  <div class="field">
+    <%= f.label :PACustomerID %><br />
+    <%= f.text_field :PACustomerID %>
+  </div>
+  <div class="field">
+    <%= f.label :PADriverName %><br />
+    <%= f.text_field :PADriverName %>
+  </div>
+  <div class="field">
+    <%= f.label :PADriverMessage %><br />
+    <%= f.text_field :PADriverMessage %>
+  </div>
+  <div class="field">
+    <%= f.label :PARouteName %><br />
+    <%= f.text_field :PARouteName %>
+  </div>
+  <div class="field">
+    <%= f.label :PACustomerName %><br />
+    <%= f.text_field :PACustomerName %>
+  </div>
+  <div class="field">
+    <%= f.label :PAComment %><br />
+    <%= f.text_field :PAComment %>
+  </div>
+  <div class="field">
+    <%= f.label :PADispatched %><br />
+    <%= f.check_box :PADispatched %>
+  </div>
+  <div class="field">
+    <%= f.label :PADispatchTime %><br />
+    <%= f.datetime_select :PADispatchTime %>
+  </div>
+  <div class="field">
+    <%= f.label :PADeleted %><br />
+    <%= f.check_box :PADeleted %>
+  </div>
+  <div class="field">
+    <%= f.label :PANotes %><br />
+    <%= f.text_field :PANotes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
