@@ -1,0 +1,81 @@
+<%= form_for(@pickup) do |f| %>
+  <% if @pickup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pickup.errors.count, "error") %> prohibited this pickup from being saved:</h2>
+
+      <ul>
+      <% @pickup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PickupTableID %><br />
+    <%= f.number_field :PickupTableID %>
+  </div>
+  <div class="field">
+    <%= f.label :DefaultRouteID %><br />
+    <%= f.text_field :DefaultRouteID %>
+  </div>
+  <div class="field">
+    <%= f.label :PickupDate %><br />
+    <%= f.datetime_select :PickupDate %>
+  </div>
+  <div class="field">
+    <%= f.label :CustomerID %><br />
+    <%= f.text_field :CustomerID %>
+  </div>
+  <div class="field">
+    <%= f.label :DriverName %><br />
+    <%= f.text_field :DriverName %>
+  </div>
+  <div class="field">
+    <%= f.label :RouteName %><br />
+    <%= f.text_field :RouteName %>
+  </div>
+  <div class="field">
+    <%= f.label :CustomerName %><br />
+    <%= f.text_field :CustomerName %>
+  </div>
+  <div class="field">
+    <%= f.label :Comment %><br />
+    <%= f.text_field :Comment %>
+  </div>
+  <div class="field">
+    <%= f.label :Monday %><br />
+    <%= f.check_box :Monday %>
+  </div>
+  <div class="field">
+    <%= f.label :Tuesday %><br />
+    <%= f.check_box :Tuesday %>
+  </div>
+  <div class="field">
+    <%= f.label :Wednesday %><br />
+    <%= f.check_box :Wednesday %>
+  </div>
+  <div class="field">
+    <%= f.label :Thursday %><br />
+    <%= f.check_box :Thursday %>
+  </div>
+  <div class="field">
+    <%= f.label :Friday %><br />
+    <%= f.check_box :Friday %>
+  </div>
+  <div class="field">
+    <%= f.label :Dispatched %><br />
+    <%= f.check_box :Dispatched %>
+  </div>
+  <div class="field">
+    <%= f.label :DispatchTime %><br />
+    <%= f.datetime_select :DispatchTime %>
+  </div>
+  <div class="field">
+    <%= f.label :Notes %><br />
+    <%= f.text_field :Notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

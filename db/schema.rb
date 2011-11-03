@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111103014739) do
+ActiveRecord::Schema.define(:version => 20111103021846) do
 
   create_table "customers", :force => true do |t|
     t.integer  "CustomerTableID"
@@ -38,6 +38,27 @@ ActiveRecord::Schema.define(:version => 20111103014739) do
     t.string   "FirstName"
     t.string   "LastName"
     t.string   "MiddleInitial"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pickups", :force => true do |t|
+    t.integer  "PickupTableID"
+    t.string   "DefaultRouteID"
+    t.datetime "PickupDate"
+    t.string   "CustomerID"
+    t.string   "DriverName"
+    t.string   "RouteName"
+    t.string   "CustomerName"
+    t.string   "Comment"
+    t.boolean  "Monday"
+    t.boolean  "Tuesday"
+    t.boolean  "Wednesday"
+    t.boolean  "Thursday"
+    t.boolean  "Friday"
+    t.boolean  "Dispatched"
+    t.datetime "DispatchTime"
+    t.string   "Notes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

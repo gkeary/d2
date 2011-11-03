@@ -1,0 +1,53 @@
+<h1>Listing pickups</h1>
+
+<table>
+  <tr>
+    <th>Pickuptableid</th>
+    <th>Defaultrouteid</th>
+    <th>Pickupdate</th>
+    <th>Customerid</th>
+    <th>Drivername</th>
+    <th>Routename</th>
+    <th>Customername</th>
+    <th>Comment</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+    <th>Dispatched</th>
+    <th>Dispatchtime</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pickups.each do |pickup| %>
+  <tr>
+    <td><%= pickup.PickupTableID %></td>
+    <td><%= pickup.DefaultRouteID %></td>
+    <td><%= pickup.PickupDate %></td>
+    <td><%= pickup.CustomerID %></td>
+    <td><%= pickup.DriverName %></td>
+    <td><%= pickup.RouteName %></td>
+    <td><%= pickup.CustomerName %></td>
+    <td><%= pickup.Comment %></td>
+    <td><%= pickup.Monday %></td>
+    <td><%= pickup.Tuesday %></td>
+    <td><%= pickup.Wednesday %></td>
+    <td><%= pickup.Thursday %></td>
+    <td><%= pickup.Friday %></td>
+    <td><%= pickup.Dispatched %></td>
+    <td><%= pickup.DispatchTime %></td>
+    <td><%= pickup.Notes %></td>
+    <td><%= link_to 'Show', pickup %></td>
+    <td><%= link_to 'Edit', edit_pickup_path(pickup) %></td>
+    <td><%= link_to 'Destroy', pickup, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pickup', new_pickup_path %>

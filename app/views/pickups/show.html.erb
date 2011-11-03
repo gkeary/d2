@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pickuptableid:</b>
+  <%= @pickup.PickupTableID %>
+</p>
+
+<p>
+  <b>Defaultrouteid:</b>
+  <%= @pickup.DefaultRouteID %>
+</p>
+
+<p>
+  <b>Pickupdate:</b>
+  <%= @pickup.PickupDate %>
+</p>
+
+<p>
+  <b>Customerid:</b>
+  <%= @pickup.CustomerID %>
+</p>
+
+<p>
+  <b>Drivername:</b>
+  <%= @pickup.DriverName %>
+</p>
+
+<p>
+  <b>Routename:</b>
+  <%= @pickup.RouteName %>
+</p>
+
+<p>
+  <b>Customername:</b>
+  <%= @pickup.CustomerName %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @pickup.Comment %>
+</p>
+
+<p>
+  <b>Monday:</b>
+  <%= @pickup.Monday %>
+</p>
+
+<p>
+  <b>Tuesday:</b>
+  <%= @pickup.Tuesday %>
+</p>
+
+<p>
+  <b>Wednesday:</b>
+  <%= @pickup.Wednesday %>
+</p>
+
+<p>
+  <b>Thursday:</b>
+  <%= @pickup.Thursday %>
+</p>
+
+<p>
+  <b>Friday:</b>
+  <%= @pickup.Friday %>
+</p>
+
+<p>
+  <b>Dispatched:</b>
+  <%= @pickup.Dispatched %>
+</p>
+
+<p>
+  <b>Dispatchtime:</b>
+  <%= @pickup.DispatchTime %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @pickup.Notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_pickup_path(@pickup) %> |
+<%= link_to 'Back', pickups_path %>
