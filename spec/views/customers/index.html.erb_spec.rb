@@ -7,10 +7,8 @@ describe "customers/index.html.erb" do
         :CustomerTableID => 1,
         :CustomerID => "Customer",
         :CustomerName => "Customer Name",
-        :Address1 => "Address1",
-        :Address2 => "Address2",
-        :City => "City",
-        :State => "State",
+        :Address1 => "Address1", :Address2 => "Address2",
+        :City => "City", :State => "State",
         :Phone => "Phone",
         :Contact => "Contact",
         :ClosingTime => "Closing Time",
@@ -24,10 +22,8 @@ describe "customers/index.html.erb" do
         :CustomerTableID => 1,
         :CustomerID => "Customer",
         :CustomerName => "Customer Name",
-        :Address1 => "Address1",
-        :Address2 => "Address2",
-        :City => "City",
-        :State => "State",
+        :Address1 => "Address1", :Address2 => "Address2",
+        :City => "City", :State => "State",
         :Phone => "Phone",
         :Contact => "Contact",
         :ClosingTime => "Closing Time",
@@ -40,37 +36,23 @@ describe "customers/index.html.erb" do
     ])
   end
 
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
   it "renders a list of customers" do
     render
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => 1.to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Customer".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Customer Name".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Address1".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Address2".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "City".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "State".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Phone".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Contact".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Closing Time".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Comment".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Default Route".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "D User".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Terminal".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Info String".to_s, :count => 2
   end
 end

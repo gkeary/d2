@@ -30,27 +30,18 @@ describe "currend_day_routes/index.html.erb" do
     ])
   end
 
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
   it "renders a list of currend_day_routes" do
     render
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => 1.to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Cdr Route".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Cdr Route Name".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Cdr Default Driver".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Cdr Driver Last Name".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Cdr Driver Message".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Cdr Station".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => false.to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "D User".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Terminal".to_s, :count => 2
   end
 end

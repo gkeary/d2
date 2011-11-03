@@ -11,8 +11,7 @@ describe "currend_day_routes/edit.html.erb" do
       :CDRDriverMessage => "MyString",
       :CDRStation => "MyString",
       :CDRChecked => false,
-      :DUser => "MyString",
-      :Terminal => "MyString"
+      :DUser => "MyString",  :Terminal => "MyString"
     ))
   end
 

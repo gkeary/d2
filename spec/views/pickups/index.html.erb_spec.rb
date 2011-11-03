@@ -40,6 +40,7 @@ describe "pickups/index.html.erb" do
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
   it "renders a list of pickups" do
+#BUG: Minitest finds 12 when expecting 2 ??
 #render
 #    assert_select "tr>td", :text => 1.to_s, :count => 2
 #    assert_select "tr>td", :text => "Default Route".to_s, :count => 2

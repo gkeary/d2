@@ -18,15 +18,12 @@ describe "drivers/index.html.erb" do
     ])
   end
 
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
   it "renders a list of drivers" do
     render
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Driver".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "First Name".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Last Name".to_s, :count => 2
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select "tr>td", :text => "Middle Initial".to_s, :count => 2
   end
 end

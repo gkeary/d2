@@ -17,29 +17,19 @@ describe "archives/show.html.erb" do
     ))
   end
 
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
   it "renders attributes in <p>" do
     render
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/1/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Pa Default Route/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Pa Customer/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Pa Driver Name/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Pa Driver Message/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Pa Route Name/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Pa Customer Name/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Pa Comment/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/false/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/false/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Pa Notes/)
   end
 end

@@ -22,39 +22,24 @@ describe "current_day_pickups/show.html.erb" do
     ))
   end
 
+    # Run the generator again with the --webrat flag if you want to use webrat matchers
   it "renders attributes in <p>" do
     render
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/1/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Default Route/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Previous Route/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Customer/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Driver Name/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Driver Message/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Route Name/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Customer Name/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Comment/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/false/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Notes/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Cdp Station/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/false/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/false/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/1/)
-    # Run the generator again with the --webrat flag if you want to use webrat matchers
     rendered.should match(/Terminal/)
   end
 end
