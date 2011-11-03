@@ -10,3 +10,5 @@ rails generate  scaffold Route2 RouteID:string RouteName:string DefaultDriverID:
 
 NOTE:  be sure to run rake spec  so that the TEST DB is cloned from DEV DB!!!
 
+rails generate scaffold Customer CustomerTableID:integer CustomerID:string CustomerName:string Address1:string Address2:string City:string State:string Phone:string Contact:string ClosingTime:string Comment:string DefaultRouteID:string DUser:string Terminal:string InfoString:string 
+

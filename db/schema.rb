@@ -11,7 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111103012847) do
+ActiveRecord::Schema.define(:version => 20111103014739) do
+
+  create_table "customers", :force => true do |t|
+    t.integer  "CustomerTableID"
+    t.string   "CustomerID"
+    t.string   "CustomerName"
+    t.string   "Address1"
+    t.string   "Address2"
+    t.string   "City"
+    t.string   "State"
+    t.string   "Phone"
+    t.string   "Contact"
+    t.string   "ClosingTime"
+    t.string   "Comment"
+    t.string   "DefaultRouteID"
+    t.string   "DUser"
+    t.string   "Terminal"
+    t.string   "InfoString"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "drivers", :force => true do |t|
     t.string   "DriverID"

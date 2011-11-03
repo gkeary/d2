@@ -1,4 +1,6 @@
 D2::Application.routes.draw do  
+  resources :customers
+
   resources :routes
 
   resources :drivers
