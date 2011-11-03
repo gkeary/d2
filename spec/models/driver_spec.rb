@@ -1,13 +1,17 @@
 require 'spec_helper'
 
 describe Driver do
-#  pending "add some examples to (or delete) #{__FILE__}"
+
+  before(:each) do
+    @d = Driver.create!( DriverID: 'AA', FirstName: 'bb',LastName:  'bb')
+    end
   it "can be instantiated" do
-     Driver.new.should be_an_instance_of Driver
+     @d.should  be_an_instance_of Driver
    end
    
-  it "can be saved successfully" do
-    Driver.create.should be_persisted
+  it "must have a unique DriverID" do
+     Driver.create(:DriverID=>'AA',:FirstName=>'bb',:LastName=>'bb').should_not be_persisted
+      #Driver.create.should not_be_persisted
   end
 
 end

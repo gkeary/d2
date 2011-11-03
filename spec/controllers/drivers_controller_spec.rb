@@ -23,6 +23,9 @@ describe DriversController do
   # update the return value of this method accordingly.
   #def valid_attributes { [:DriverID, :FirstName ,:LastName ,:MiddleInitial]} #WRONG
   def valid_attributes 
+    { DriverID: 'unique id', FirstName: 'valid first name',
+       LastName: 'valid last name'
+    }
   end
 
 

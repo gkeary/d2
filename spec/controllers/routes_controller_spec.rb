@@ -24,7 +24,10 @@ describe RoutesController do
   # Route. As you add validations to Route, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+      { RouteID:'AA',RouteName:'bb',
+                   DefaultDriverID:'bb',
+                    DUser: 'user',
+                    Terminal: 'thisterm'}
   end
 
   describe "GET index" do
