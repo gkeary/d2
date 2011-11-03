@@ -6,3 +6,7 @@
 
 
 rails generate  scaffold Route2 RouteID:string RouteName:string DefaultDriverID:string DriverMessage:string DUser:string Terminal:string 
+
+
+NOTE:  be sure to run rake spec  so that the TEST DB is cloned from DEV DB!!!
+

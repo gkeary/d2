@@ -1,5 +1,6 @@
-D2::Application.routes.draw do
+D2::Application.routes.draw do  
   resources :routes
+
   resources :drivers
 
   # The priority is based upon order of creation:
