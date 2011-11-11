@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111103030630) do
+ActiveRecord::Schema.define(:version => 20111111132117) do
 
   create_table "archives", :force => true do |t|
     t.integer  "PickupArchiveID"
@@ -66,6 +66,11 @@ ActiveRecord::Schema.define(:version => 20111103030630) do
     t.boolean  "CDPDeleted"
     t.integer  "PostedCount"
     t.string   "Terminal"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "current_day_routes", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end

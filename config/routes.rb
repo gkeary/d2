@@ -1,7 +1,7 @@
 D2::Application.routes.draw do  
-  resources :current_day_pickups
+  resources :current_day_routes
 
-  resources :currend_day_routes
+  resources :current_day_pickups
 
   resources :archives
 
