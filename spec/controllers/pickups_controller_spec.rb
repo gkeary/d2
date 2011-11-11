@@ -24,7 +24,20 @@ describe PickupsController do
   # Pickup. As you add validations to Pickup, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+     {
+        :PickupTableID => '101',
+        :DefaultRouteID => '01',
+        :PickupDate => '11/11/2011',
+        :CustomerID => 'AAAAA',
+        :DriverName => 'Bill Driver',
+        :RouteName => 'Concord',
+        :CustomerName => 'Acme Inc.',
+        :Comment => '2skids every day',
+        :Monday => true, 
+        :Dispatched => true,  # could complain abt Dispatch can't be blank
+        :DispatchTime => '4PM',
+        :Notes => '1 Me 1Ma'
+     }
   end
 
   describe "GET index" do

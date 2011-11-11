@@ -1,14 +1,15 @@
 require 'spec_helper'
 
-def valid_attributes
-  { RouteID:'AA',
-     RouteName:'bb',
-     DefaultDriverID:'bb',
-     DUser: 'user',
-     Terminal: 'thisterm'
-  }
-end
 describe Route do
+
+  def valid_attributes
+    { RouteID:'AA',
+       RouteName:'bb',
+       DefaultDriverID:'bb',
+       DUser: 'user',
+       Terminal: 'thisterm'
+    }
+  end
 
   before(:each) do
     @d = Route.create! valid_attributes

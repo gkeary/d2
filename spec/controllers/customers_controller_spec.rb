@@ -24,7 +24,18 @@ describe CustomersController do
   # Customer. As you add validations to Customer, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+  { CustomerID:'CAMRC',
+     CustomerName:'bb',
+     DefaultRouteID: '02',
+     Address1:'bb',
+     City:'bb',
+     Phone: '555-1212',
+     InfoString: 'Acme@Lebanon',
+     ClosingTime: '6pm',
+     Comment: 'this is a comment',
+     DUser: 'user',
+     Terminal: 'thisterm'
+  }
   end
 
   describe "GET index" do
