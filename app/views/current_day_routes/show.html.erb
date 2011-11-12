@@ -1,5 +1,45 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <b>Routeid:</b>
+  <%= @current_day_route.RouteID %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @current_day_route.Name %>
+</p>
+
+<p>
+  <b>Defaultdriverid:</b>
+  <%= @current_day_route.DefaultDriverID %>
+</p>
+
+<p>
+  <b>Driverlastname:</b>
+  <%= @current_day_route.DriverLastName %>
+</p>
+
+<p>
+  <b>Drivermessage:</b>
+  <%= @current_day_route.DriverMessage %>
+</p>
+
+<p>
+  <b>Station:</b>
+  <%= @current_day_route.Station %>
+</p>
+
+<p>
+  <b>Duser:</b>
+  <%= @current_day_route.Duser %>
+</p>
+
+<p>
+  <b>Terminal:</b>
+  <%= @current_day_route.Terminal %>
+</p>
+
 
 <%= link_to 'Edit', edit_current_day_route_path(@current_day_route) %> |
 <%= link_to 'Back', current_day_routes_path %>

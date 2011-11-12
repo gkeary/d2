@@ -16,13 +16,13 @@ def valid_attributes
      Terminal: 'thisterm'
   }
 end
-describe Customer do
+
 
   before(:each) do
     @d = Customer.create! valid_attributes
     end
   it "can be instantiated" do
-     @d.should  be_an_instance_of Customer
+     @d.should be_an_instance_of Customer
    end
    
   it "must have a unique CustomerID" do
@@ -34,5 +34,4 @@ describe Customer do
                      ClosingTime: '6pm',
                     :Terminal => 'thisterm').should_not be_persisted
   end
-end
 end

@@ -2,6 +2,14 @@
 
 <table>
   <tr>
+    <th>Routeid</th>
+    <th>Name</th>
+    <th>Defaultdriverid</th>
+    <th>Driverlastname</th>
+    <th>Drivermessage</th>
+    <th>Station</th>
+    <th>Duser</th>
+    <th>Terminal</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +17,14 @@
 
 <% @current_day_routes.each do |current_day_route| %>
   <tr>
+    <td><%= current_day_route.RouteID %></td>
+    <td><%= current_day_route.Name %></td>
+    <td><%= current_day_route.DefaultDriverID %></td>
+    <td><%= current_day_route.DriverLastName %></td>
+    <td><%= current_day_route.DriverMessage %></td>
+    <td><%= current_day_route.Station %></td>
+    <td><%= current_day_route.Duser %></td>
+    <td><%= current_day_route.Terminal %></td>
     <td><%= link_to 'Show', current_day_route %></td>
     <td><%= link_to 'Edit', edit_current_day_route_path(current_day_route) %></td>
     <td><%= link_to 'Destroy', current_day_route, confirm: 'Are you sure?', method: :delete %></td>

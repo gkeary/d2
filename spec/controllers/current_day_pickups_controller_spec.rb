@@ -24,7 +24,26 @@ describe CurrentDayPickupsController do
   # CurrentDayPickup. As you add validations to CurrentDayPickup, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {
+        :CurrentDayPickupID => '01', 
+        :CDPDefaultRouteID => '001', 
+        :CDPPreviousRouteID => '15', 
+        :CDPPickupDate => "12/13/2005",
+        :CDPCustomerID => 'AAAAA',
+        :CDPDriverName => 'Bill Driver', 
+        :CDPDriverMessage => 'get Hot Chocolate',
+        :CDPRouteName => 'Sutton', 
+        :CDPCustomerName => 'Acme Inc.', 
+        :CDPComment => '2 skids',
+        :CDPDispatched => true, 
+        :CDPDispatchTime => '4:40PM', 
+        :CDPNotes => '1 CT, 1MA',
+        :CDPStation => 'elwood', 
+        :CDPChecked => 'deleted', 
+        :CDPDeleted => 'deleted',
+        :PostedCount => '3', 
+        :Terminal  => 'elwood'
+    }
   end
 
   describe "GET index" do
